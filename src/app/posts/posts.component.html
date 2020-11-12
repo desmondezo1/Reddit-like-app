@@ -1,0 +1,43 @@
+
+
+<div class="content-div">
+    <div class="col1 votes-column">
+        <a (click)="voteUp()" class="btn-up"> <span class="iconify" data-icon="foundation:arrow-up" data-inline="false"></span> </a>
+        <p>{{Postfilter.vote}}</p>
+        <a (click)="voteDown()" class="btn-down"> <span class="iconify" data-icon="foundation:arrow-down" data-inline="false"></span> </a>
+
+    </div>
+    <div class="col2">
+       
+        <div class="row1"> 
+            
+                <span class="user-details">Posted by XYZ  <span id="time">. posted 5h ago</span></span>
+            
+            <button class="join"><span class="iconify" data-icon="fa-solid:plus" data-inline="false" style="color: #FFFFFF;"></span> Join</button>
+        </div>
+
+        <div class="row2">
+            <div class="title">
+                <h2>{{Postfilter.title}}</h2>
+            </div>
+            <div class="content">
+               {{Postfilter.content}} 
+            </div>            
+        </div>
+            <div class="col1 mobile-col1">
+                <a (click)="voteUp()" class="btn-up"> <span class="iconify" data-icon="foundation:arrow-up"
+                        data-inline="false"></span> </a>
+                <p>{{Postfilter.vote}}</p>
+                <a (click)="voteDown()" class="btn-down"> <span class="iconify" data-icon="foundation:arrow-up"
+                        data-inline="false"></span> </a>
+            
+            </div>
+        <div class="row3">
+            <span class="interact"><span class="iconify" data-icon="bx:bx-message-alt" data-inline="false" style="color: #000000;"></span> 6.3k Comments</span>
+
+            <span class="interact"><span class="iconify" data-icon="mdi:share" data-inline="false" style="color: #000000;"></span> Share</span>
+
+            <span class="interact"><span class="iconify" data-icon="bi:bookmark-plus" data-inline="false" style="color: #000000;"></span> Save</span>
+        </div>
+    </div>
+</div>

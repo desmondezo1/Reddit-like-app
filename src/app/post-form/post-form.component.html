@@ -1,0 +1,54 @@
+<section class="post-form-section">
+
+    <div class="title-div">
+        <img src="../../assets/img/img.png" alt="">
+        <h2> What's new?</h2>
+    </div>
+
+    <form class="postForm">
+
+        <div class="field">
+            <label for="post-title">Title</label>
+            <input class="field-input" type="text" #title name="post-title">
+        </div>
+
+        <div class="field">
+            <label for="post-content">Content</label>
+            <textarea class="field-input" name="" #content id="textarea" cols="30" rows="10" ></textarea>
+            
+        </div>
+
+        <!-- the upload an image or video section -->
+        <div class="field">
+            
+            <div class="btn-group">
+                <button class="image-upload"><span class="iconify" data-icon="clarity:image-line" data-inline="false"></span></button>
+                <button class="video-upload"><span class="iconify" data-icon="clarity:video-gallery-line" data-inline="false"></span></button>
+            </div>
+        </div>
+
+        <div class="field">
+
+            <label for="tags">Tags</label>
+            <div class="tags">
+              <div class="tag-item">
+                  <span >New </span>
+                  <span class="iconify" data-icon="eva:close-outline" data-inline="false"></span>
+                </div>
+                
+                <input class="tags-input" type="text" name="tags">
+            </div>
+        </div>
+
+        <div class="field">
+        <button class="post-button" (click)="addPost(title,content)">
+                Post it!
+        </button>
+       
+        </div>
+        
+    </form>        
+
+</section>
+
+

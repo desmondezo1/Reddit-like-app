@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "reddit-app"
+    }
+  },
+  "defaultProject": "reddit-app",
+  "cli": {
+    "analytics": false
+  }
 }
