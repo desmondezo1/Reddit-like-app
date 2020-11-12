@@ -131,9 +131,6 @@ main {
 
 /* Navigation toggle */
 
-.side-nav a .open-icon {
-}
-
 .side-nav a .close-icon {
   display: none;
   color: red;
