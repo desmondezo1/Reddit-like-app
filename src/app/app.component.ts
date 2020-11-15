@@ -7,7 +7,8 @@ import { Posts } from "./post-form/posts.model";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
-
+  verticalTablet: Boolean
+  largePhone: Boolean
   clicked: boolean = false
   toggle_popUpForm_btn: boolean = false
   postData: Posts[]
@@ -69,11 +70,22 @@ export class AppComponent implements AfterViewInit {
     //Toggles open the mobile navigation
       toggleMenu(){
 
+        this.verticalTablet = window.matchMedia("(min-width: 501px) and (max-width: 999px)").matches
+        this.largePhone = window.matchMedia("(max-width: 500px)").matches
+        
       if (this.clicked === false) {
-        document.getElementById("mobileMenu").style.display="flex";
-            this.clicked = true
+
+            if (this.verticalTablet) {
+                  document.getElementById("mobileMenu").style.top="64px";
+            } else if(this.largePhone){
+                  document.getElementById("mobileMenu").style.top="45px";
+            }
+        this.clicked = true
+
       }else{
-        document.getElementById("mobileMenu").style.display="none";
+
+
+        document.getElementById("mobileMenu").style.top="-234px";
         this.clicked = false
       }
 

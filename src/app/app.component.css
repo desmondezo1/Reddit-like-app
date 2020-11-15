@@ -9,7 +9,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 99;
 }
 
 .logo-div {
@@ -87,7 +87,7 @@ nav {
 
 /* mobile menu  */
 .mobile-menu {
-  display: none;
+  transition: top 1100ms ease;
 }
 .hamburger-button {
   display: none;
@@ -155,7 +155,7 @@ main {
   }
   .mobile-menu {
     font-family: "Open Sans", sans-serif;
-    display: none;
+    /* display: none; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -164,7 +164,8 @@ main {
     background: hsl(0deg 0% 93%);
     padding: 10px 10px;
     position: fixed;
-    top: 45px;
+    /* top: 45px; */
+    top: -234px;
     z-index: 9;
   }
   .mobile-menu .mobile-search {
@@ -247,7 +248,7 @@ main {
   }
 }
 
-/* vertical tablet devvices */
+/* vertical tablet devices */
 
 @media screen and (min-width: 500px) and (max-width: 999px) {
   nav {
@@ -268,7 +269,7 @@ main {
   }
   .mobile-menu {
     font-family: "Open Sans", sans-serif;
-    display: none;
+    /* display: none; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -277,7 +278,8 @@ main {
     background: hsl(0deg 0% 93%);
     padding: 10px 10px;
     position: fixed;
-    top: 64px;
+    /* top: 64px; */
+    top: -234px;
     z-index: 10;
   }
   .mobile-menu .mobile-search {
